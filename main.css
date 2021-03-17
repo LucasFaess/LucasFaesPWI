@@ -8,16 +8,10 @@ body{
     margin-left: 50px;
 }
 
-.bio{
-    color: white;
-    font-size: 20px;
-    margin-left: 200px;
-    margin-top: 100px;
-}
 
 .foto{
     border-radius: 50%;
-    margin-left: 30px;
+    margin-left: 70px;
 }
 
 header .topo{
@@ -28,10 +22,11 @@ header .topo{
     margin-right: 1200px;
 }
 
-.bio1{
-    color: white;
-    font-size: 20px;
-    margin-left: 200px;
-    margin-top: 50px;
-}
 
+#but{
+    border: solid 1px red;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    margin-left: 200px;
+}

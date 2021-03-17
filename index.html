@@ -12,12 +12,25 @@
                 <img class="foto" src="img/perfil.jpeg" alt=""> 
                 <h1 class="nome">Lucas Faes</h1>
             </div>
-            <p class="bio">Aluno do curso Desenvolvimento de Sistemas
-             da ETEC Professor Camargo Aranha.</p><br>
-            <p class="bio1">Meus objetivos são: <br>
-                -Me tornar um desenvolvedor. Do que? de alguma cosia!
-            </p>    
+            <div>
+                <button id="but" onclick="bio()">biografia</button>
+            </div>
+            <div id="bio">
+
+            </div>
         </div>
     </header>
+
+    <script>
+        function bio(){
+            var bio = document.getElementById('bio')
+            bio.innerHTML = 'Aluno do curso Desenvolvimento de Sistemas da ETEC Professor Camargo Aranha.<br><br>Meus objetivos são:<br>-Me tornar um desenvolvedor. Do que? de alguma cosia! '
+            bio.style.color = 'white'
+            bio.style.fontSize = '20px'
+            bio.style.marginLeft = '200px'
+            bio.style.marginTop = '100px'
+        }
+
+    </script>
 </body>
 </html>
