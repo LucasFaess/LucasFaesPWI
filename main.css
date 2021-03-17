@@ -30,3 +30,10 @@ header .topo{
     color: white;
     margin-left: 200px;
 }
+
+#but2{
+    border: solid 1px red;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}

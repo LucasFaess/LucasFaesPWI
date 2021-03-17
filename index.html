@@ -14,6 +14,7 @@
             </div>
             <div>
                 <button id="but" onclick="bio()">biografia</button>
+                <button id="but2" onclick="esconder()">Fechar bio</button>
             </div>
             <div id="bio">
 
@@ -29,6 +30,11 @@
             bio.style.fontSize = '20px'
             bio.style.marginLeft = '200px'
             bio.style.marginTop = '100px'
+        }
+
+        function esconder(){
+            var bio = document.getElementById('bio')
+            bio.innerHTML = ''
         }
 
     </script>
