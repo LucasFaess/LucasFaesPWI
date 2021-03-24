@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border: solid 2px blue;
+    width: 100%;
+    background-color: white;
+    padding: 0;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  /* odd = impar 
+  even = par */
+
+  td:hover{
+      background-color: black;
+      color: white;
+  }
+
+  th:hover{
+      background-color: black;
+      color: red;
+  }
