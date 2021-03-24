@@ -1,9 +1,12 @@
+*{
+  font-family: Arial, sans-serif;
+}
+
 body{
     background-color: black;
 }
 
 table {
-    font-family: arial, sans-serif;
     border: solid 2px blue;
     width: 100%;
     background-color: white;
