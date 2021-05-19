@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--
+        this -> passa a tag atual
+        event -> passa o evento gerado
+    -->
+    <input type="text"
+           name="usuario"
+           id="loginusuario"
+           placeholder="Usuário"
+           onkeyup="validar(this)"
+    >
+    <button onclick="exibir()">Exibir imagem</button>
+    <button onclick="apagar()">Apagar</button>
+
+    <div class="img">
+        <span id="exibir"></span>
+    </div>
+
+    <script>
+        let res = document.getElementById('exibir')
+
+        function exibir(){
+            res.innerHTML = `<img src="img/alambradogau.png" alt="">`
+        }
+
+        function apagar(){
+            res.innerHTML = ``
+        }
+        
+        function validar(tag){
+            console.log("Você está digitando!")
+
+            let res = document.getElementById('exibir')
+            res.innerHTML = tag.value
+        }
+    </script>
+</body>
+</html>
