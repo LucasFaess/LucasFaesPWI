@@ -1,0 +1,9 @@
+.negrito{
+    font-weight: bold;
+}
+.vermelho{
+    color: rgb(177, 6, 6);
+}
+.caixa-alta{
+    text-transform: uppercase;
+}

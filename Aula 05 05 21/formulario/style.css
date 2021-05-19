@@ -1,0 +1,27 @@
+body{
+    background-color: rgba(125, 126, 201, 0.4);
+}
+
+form {
+    background-color: rgb(130, 218, 177);
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+}
+
+.elemento-sozinho {
+    display: block;
+    margin-bottom: 14px;
+    width: 97%;
+}
+
+button {
+    background-color: rgb(56, 148, 105);
+    border: 2px solid rgb(75, 192, 138);
+    border-radius: 4px;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    color:rgb(130, 218, 177);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .negrito{
+    font-weight: bold;
+    }
+    .vermelho{
+       color: rgb(177, 6, 6);
+    }
+    .caixa-alta{
+        text-transform: uppercase;
+    }
+    </style>
+</head>
+<body>
+    <input type="text" name="loginusuario" id="user" placeholder="Nome">
+    <input type="password" name="loginsenha" id="senha" placeholder="Senha">
+    <button onclick="exibir()">Logar</button>
+
+    <p>
+        Leia o 
+        <span class="negrito caixa-alta vermelho">contrato</span>
+        abaixo e depois
+        <span class="negrito caixa-alta vermelho">assine</span>
+        envie por
+        <span class="negrito caixa-alta vermelho">e-mail</span>
+
+    </p>
+
+    <span id="res"></span>
+
+    <script>
+        function exibir(){
+            var user = document.getElementById('user');
+            var senha = document.getElementById('senha');
+            var res = document.getElementById('res');
+
+            userlogin = user.value
+            senhaLogin = senha.value
+
+            res.innerHTML = `O usuário é <b>${userlogin}</b> e sua senha é
+             <b>${senhaLogin}</b>`
+        }
+    </script>
+</body>
+</html>
