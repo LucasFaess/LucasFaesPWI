@@ -8,40 +8,68 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+<style>
+    .login{
+        margin-bottom: 20px;
+    }
+    .img{
+        margin-top: 30px;
+    }
+</style>
 <body>
     <!--
         this -> passa a tag atual
         event -> passa o evento gerado
     -->
-    <input type="text"
-           name="usuario"
-           id="loginusuario"
-           placeholder="Usuário"
-           onkeyup="validar(this)"
-    >
-    <button onclick="exibir()">Exibir imagem</button>
-    <button onclick="apagar()">Apagar</button>
+    <div class="login">
+        <input type="text"
+        name="usuario"
+        id="loginuser"
+        placeholder="Usuário"
+        onkeyup=""
+        >
+        <input type="password" 
+        name="senha" 
+        id="senhauser"
+        placeholder="Senha"
+        >
+        <button onclick="logar()">Entrar</button>
+        <div id="res">
+            <p>Usuário:
+                <br>
+                Senha:
+            </p>
+        </div>
+    </div>
+
+    <div class="butoes">
+        <button onclick="exibir()">Exibir imagem</button>
+        <button onclick="apagar()">Apagar</button>
+    </div>
 
     <div class="img">
         <span id="exibir"></span>
     </div>
 
     <script>
-        let res = document.getElementById('exibir')
+        let exibirimg = document.getElementById('exibir') // Span que vai mostrar a img
 
         function exibir(){
-            res.innerHTML = `<img src="img/alambradogau.png" alt="">`
+            exibirimg.innerHTML = `<img src="img/alambradogau.png" alt="" width="300px" height="300px">`
         }
 
         function apagar(){
-            res.innerHTML = ``
+            exibirimg.innerHTML = ``
         }
         
-        function validar(tag){
-            console.log("Você está digitando!")
+        function logar(){
+            let usuario = document.getElementById('loginuser').value
+            let senha = document.getElementById('senhauser').value
 
-            let res = document.getElementById('exibir')
-            res.innerHTML = tag.value
+            res.innerHTML = `<p>Usuário: ${usuario} 
+                                    <br>
+                                Senha: ${senha}
+                            </p>` // res = id da div no html
         }
     </script>
 </body>
