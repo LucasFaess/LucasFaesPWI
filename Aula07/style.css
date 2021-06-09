@@ -1,0 +1,34 @@
+body{
+    background-color: #202020;
+}
+.log{
+    display: grid;
+}
+
+.log input{
+    margin: 4px;
+    width: 300px;
+    height: 25px;
+    background-color: rgba(146, 146, 146, 0.726);
+    border-radius: 5px;
+    border: solid 2px black;
+}
+
+.log button{
+    width: 300px;
+    margin-left: 5px;
+    background-color: #3a3a3aaf;
+    border: solid 2px black;
+    border-radius: 6px;
+    text-align: justify;
+}
+
+.log input::-webkit-input-placeholder{
+    color:rgb(0, 0, 0);
+    font-style: italic;
+    font-size: 18px;
+}
+
+.res{
+    color: #f8f8f8;
+}

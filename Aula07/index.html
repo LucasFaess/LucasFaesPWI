@@ -1,19 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Praticando js</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <style>
-
-    </style>
 </head>
 <body>
-    <label for="corFav">Selecione sua cor favorita</label>
-    <input type="color" id="corFav" required>
-    <input type="number" pattern="[0-9]{11-11}">
-    <input type="submit" value="Submit">
+    <h1>Login</h1>
+    <form class="log" method="GET" onsubmit="onClickEntrar(event)">
+       
+        <input 
+                type="email" 
+                name="usuario" 
+                id="form-e-javascript-usuario"
+                placeholder="e-mail">
+
+        <input 
+                type="password" 
+                name="senha" 
+                id="form-e-javascript-senha"
+                placeholder="senha">
+ 
+        <button 
+                type="submit" 
+                value="Entrar"
+                id="form-e-javascript-entrar">
+                Entrar
+        </button>
+
+    </form>
+
+    <div class="res" id="form-e-javascript-resultado"></div>
+
+    <script>
+        function onClickEntrar(meuEvento) {            
+            meuEvento.preventDefault();
+            
+            let tagUsuario = document.getElementById("form-e-javascript-usuario");
+            let tagSenha = document.getElementById("form-e-javascript-senha");
+            let tagResultado = document.getElementById("form-e-javascript-resultado");
+            let resultado = "" + 
+                "Você tentou logar com os seguintes dados <br>" +
+                "Usuário: " + tagUsuario.value + "<br>" +
+                "Senha: " + tagSenha.value + "<br>" +
+                "Senha (Base 64): " + btoa(tagSenha.value)
+            ;
+            tagResultado.innerHTML = resultado;
+        }
+    </script>
+
 </body>
 </html>
